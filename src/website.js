@@ -1,5 +1,8 @@
 // Importing tabs //
 import loadHomeTab from "./home";
+import loadMenuTab from "./menu";
+
+// Importing CSS file //
 import "./style.css";
 
 // Creating Header //
@@ -47,6 +50,7 @@ function createHeaderNav() {
       return;
     } else {
       activateButton(e);
+      loadMenuTab();
       console.log("Menu");
     }
   });

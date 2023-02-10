@@ -44,6 +44,7 @@ function createImageGrid() {
 function loadHomeTab() {
   const main = document.querySelector(".main");
 
+  main.textContent = "";
   main.appendChild(createHomeTab());
 }
 
