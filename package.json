@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "TOP Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ka0gaMi/restaurant-page.git"
+  },
+  "author": "Kornelijus Semenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ka0gaMi/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Ka0gaMi/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
