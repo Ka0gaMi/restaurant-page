@@ -2,6 +2,7 @@
 import loadHomeTab from "./home";
 import loadMenuTab from "./menu";
 import loadAboutTab from "./about";
+import loadContactTab from "./contact";
 
 // Importing CSS file //
 import "./style.css";
@@ -81,6 +82,7 @@ function createHeaderNav() {
       return;
     } else {
       activateButton(e);
+      loadContactTab();
       console.log("Contact us");
     }
   });

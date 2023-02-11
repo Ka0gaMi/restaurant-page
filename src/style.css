@@ -162,3 +162,32 @@ h3.para {
 img.place {
   object-fit: fill;
 }
+
+/* Styling Contact us tab */
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.svg {
+  object-fit: fit;
+  height: 20px;
+  width: 20px;
+}
+
+div.contact > h3 {
+  margin: 0;
+  text-align: center;
+}
+
+img.contact {
+  padding: 10px;
+  box-sizing: border-box;
+}

@@ -30,6 +30,21 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "svg-url-loader",
+            options: {
+              esModule: true,
+              encoding: "base64",
+              limit: 3 * 1024,
+              noquotes: true,
+              stripdeclarations: true,
+            },
+          },
+        ],
+      },
     ],
   },
 };
