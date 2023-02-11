@@ -143,3 +143,22 @@ div.item > h3 {
   margin: 0;
   font-size: 25px;
 }
+
+/* Styling About us tab */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+h3.para {
+  margin: 0;
+}
+
+img.place {
+  object-fit: fill;
+}

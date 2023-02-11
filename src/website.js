@@ -1,6 +1,7 @@
 // Importing tabs //
 import loadHomeTab from "./home";
 import loadMenuTab from "./menu";
+import loadAboutTab from "./about";
 
 // Importing CSS file //
 import "./style.css";
@@ -65,6 +66,7 @@ function createHeaderNav() {
       return;
     } else {
       activateButton(e);
+      loadAboutTab();
       console.log("About us");
     }
   });
