@@ -18,7 +18,7 @@ module.exports = {
       filename: "index.html",
       inject: "head",
       scriptLoading: "defer",
-      publicPath: "./gh-pages/",
+      publicPath: "./",
     }),
   ],
   module: {
