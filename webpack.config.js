@@ -18,6 +18,7 @@ module.exports = {
       filename: "index.html",
       inject: "head",
       scriptLoading: "defer",
+      publicPath: "./dist",
     }),
   ],
   module: {
