@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -7,7 +8,18 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "images/[hash][ext][query]",
+    clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      title: "Restaurant Page",
+      filename: "index.html",
+      inject: "head",
+      scriptLoading: "defer",
+    }),
+  ],
   module: {
     rules: [
       {
@@ -15,7 +27,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
       },
     ],
